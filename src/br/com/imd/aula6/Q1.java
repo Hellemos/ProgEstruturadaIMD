@@ -12,10 +12,9 @@ public class Q1 {
 		
 		int vetor[] = new int[quantidade];	
 		
-		
+		System.out.println("Entre com os valores: ");
 		for (int i = 0; i < quantidade; i++) {
-			int valor = leia.nextInt();
-			vetor[i] = valor;	
+			vetor[i] = leia.nextInt();
 		}
 		
 		System.out.println("*** Calculando a média dos elementos ***");
@@ -29,9 +28,11 @@ public class Q1 {
 		System.out.println();
 		System.out.println("*** Resultado da diferença ***");
 		int diferenca = 0;
+		int dif = 0;
 		for (int i = 0; i < vetor.length - 1; i++) {
 			diferenca = vetor[i] - vetor[i + 1];
-			System.out.print(diferenca + " / ");
+			dif = vetor[i] - vetor[i];
+			System.out.print(diferenca + " / " + dif + " / ");
 		}
 	}
 

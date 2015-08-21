@@ -17,40 +17,43 @@ public class Q2 {
 		System.out.println(solicitacao);
 		nomes = new String[quant];
 		telefones = new String[quant];
+	
 		
 		int count = 1;
 		while (count != 0) {
-			System.out.print("Escolha a operação que deseja fazer: \n1)Cadastrar. \n2)Consultar. \n>");
+			System.out.print("Digite 1 para cadastrar. \n>");
 			int op = leia.nextInt();
 			switch (op) {
 			case 1:
-				System.out.println("### Insira os dados ###");
+				System.out.println("### Insira os dados ###");					
 				for (int i = 0; i < quant; i++) {
 					System.out.println("+-++-++-++-++-++-++-++-+");
 					System.out.print("Nome: ");
-					String nome = leia.next();
+					nomes[i] = leia.next();
+					leia.nextLine();
 					System.out.print("Telefone: ");
-					String telefone = leia.next();
-					nomes[i] = nome;
-					telefones[i] = telefone;
-				}
-				break;
-			case 2:	
-				String output = "sair";		
+					telefones[i] = leia.next();
+					leia.nextLine();
+				
+				}	
+				System.out.println("### Consulta ###");
+				String output = "";					
 				do{
 				System.out.print("### Digite o nome que deseja buscar: ### \n>");
-				output = leia.next();		
+				output = leia.next();	
+				leia.nextLine();
 					for (int i = 0; i < nomes.length; i++) {
-						if (nomes[i].equals(output)) {
+						if (output.equals(nomes[i])) {
 							System.out.println("Resultado encontrado na posição " + i + ": " + "(Nome: "+ nomes[i] + " - " + "Tel: " +telefones[i] + ")");
 						}else if (output.equals("sair")) {
-							System.out.println("Consulta finalizada!");
+							System.out.println("*** Consulta finalizada! ***");
 							break;
 						}else {
 							System.out.println("Não encontrado na posição " + i);
 						}
-					}									
-				} while (!output.equals("sair"));				
+					}
+				} while (!output.equals("sair"));	
+				
 				break;
 
 			default:
