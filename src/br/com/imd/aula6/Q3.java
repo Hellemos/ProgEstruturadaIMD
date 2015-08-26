@@ -2,6 +2,11 @@ package br.com.imd.aula6;
 
 import java.util.Scanner;
 
+/*
+ * @autor: Hellen Lemos
+ * 
+ * */
+
 public class Q3 {
 
 	public static void main(String[] args) {
