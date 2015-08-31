@@ -1,4 +1,4 @@
-package br.com.imd.aula6;
+package br.com.imd.atividade06;
 
 import java.util.Scanner;
 
