@@ -9,24 +9,27 @@ inteiros de 1 até n.*/
 public class Q2 {
 
 	public static void main(String[] args) {
-		Scanner leia = new Scanner(System.in);
+        Scanner leia = new Scanner(System.in);
 
-		System.out.println("Entre com um número: " );
-		int numero = leia.nextInt();
-		
-		int s = soma(numero);
-		System.out.println("Resultado: " + s);
-	}
-	
-	/*somar números*/
-	public static int soma(int n){
-		int somar = 0;
-		if(n == 0){
-			System.out.println("O número não pode ser zero!");;
-		}else{
-			somar = n + soma(n - 1);
-		}
-		return somar;
-	}
+        System.out.println("Entre com um número: ");
+        int numero = leia.nextInt();
 
+        if (numero == 0) {
+            System.out.println("O número não pode ser zero!");
+        }
+        int s = soma(numero);
+        System.out.println("Resultado: " + s);
+    }
+
+    /*somar números*/
+    public static int soma(int n) {
+        int somar = 0;
+        if (n == 0) {
+            somar = 0;
+        } else {
+            somar = n + soma(n - 1);
+        }
+        return somar;
+    }
 }
+
