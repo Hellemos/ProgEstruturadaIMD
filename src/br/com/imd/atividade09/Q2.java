@@ -6,7 +6,7 @@ import java.util.Scanner;
 Implemente em Java uma função soma(n), recursiva, que retorna a soma de todos os números
 inteiros de 1 até n.*/
 
-public class Q2 {
+public class HellenLemos_Q2 {
 
 	public static void main(String[] args) {
         Scanner leia = new Scanner(System.in);
