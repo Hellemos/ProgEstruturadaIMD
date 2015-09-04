@@ -2,7 +2,7 @@ package br.com.imd.atividade09;
 
 import java.util.Scanner;
 
-public class Q1 {
+public class HellenLemos_Q1 {
 
 	public static void main(String[] args) {
 		/*Fatorial de um número*/
